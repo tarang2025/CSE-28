@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive E-commerce Navbar</title>
+    
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    padding: 15px 20px;
+    color: white;
+    position: relative;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #00bfff;
+}
+
+
+.menu-btn {
+    font-size: 28px;
+    display: none;
+    cursor: pointer;
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #222;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+
+    #menu-toggle:checked + .menu-btn + .nav-links {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links li {
+        padding: 12px 0;
+        text-align: center;
+        border-bottom: 1px solid #333;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    .menu-btn {
+        font-size: 26px;
+    }
+}
+
+</style>
+<body>
+
+<nav class="navbar">
+
+    
+    <div class="logo">ShopEase</div>
+
+    
+    <input type="checkbox" id="menu-toggle">
+
+    
+    <label for="menu-toggle" class="menu-btn">☰</label>
+
+    
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Offers</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+</nav>
+
+</body>
+</html>
