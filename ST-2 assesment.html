@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Cards</title>
+    
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 30px;
+}
+.title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}
+.profile-card {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background: #ffffff;
+    padding: 20px;
+    width: 340px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.profile-img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-info h2 {
+    margin: 0 0 8px;
+}
+
+.profile-info p {
+    margin: 3px 0;
+    color: #333;
+}
+
+</style>
+<body>
+
+<h1 class="title">Student Profiles</h1>
+
+<div class="card-wrapper">
+
+    <div class="profile-card">
+        <div class="profile-img">
+            <img src="https://via.placeholder.com/120" alt="Arsh Photo">
+        </div>
+
+        <div class="profile-info">
+            <h2>Arsh Mishra</h2>
+            <p> B.Tech-CSE</p>
+            <p> 1st Year</p>
+            <p> ABES Engineering College</p>
+        </div>
+    </div>
+
+    <div class="profile-card">
+        <div class="profile-img">
+            <img src="https://via.placeholder.com/120" alt="Aditya photo">
+        </div>
+
+        <div class="profile-info">
+            <h2>Aditya Aggarwal</h2>
+            <p>B.Tech-ECE</p>
+            <p>1st Year</p>
+            <p>AKG Engineering College</p>
+        </div>
+    </div>
+    
+    </div>
+
+</div>
+
+</body>
+</html>
